@@ -18,8 +18,10 @@ Here is a formular I made for time to be spent when reading any book. I hope you
 
 ---
 
-PG : Pages
-CHP : Chapters
+PG
+: Pages
+CHP
+: Chapters
 
 ---
 

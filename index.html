@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>book-read-session</title>
+  </head>
+
+  <body>
+    <div id="root">
+      <h1>Book Read Session</h1>
+      <div class="container">
+        <div class="container__top">
+          <p>Book Pages</p>
+          <p>Book Chapters</p>
+          <p>Custom fields</p>
+        </div>
+        <div class="container__body">
+          <div class="container__bodyGroups">
+            <div class="pgsGroup">
+              <div class="groups">
+                <input type="checkbox" name="pg_50" id="pg_50" />
+                <label for="pg_50">pg < 50 </label>
+              </div>
+              <div class="groups">
+                <input type="checkbox" name="pg_200" id="pg_200" />
+                <label for="pg_200">pg < 200 </label>
+              </div>
+              <div class="groups">
+                <input type="checkbox" name="pg_350" id="pg_350" />
+                <label for="pg_350">pg < 350 </label>
+              </div>
+              <div class="groups">
+                <input type="checkbox" name="pg_G350" id="pg_G350" />
+                <label for="pg_G350">pg > 350 </label>
+              </div>
+            </div>
+
+            <div class="chsGroup">
+              <div class="groups">
+                <input type="checkbox" name="ch_10" id="ch_10" />
+                <label for="ch_10">chp < 10 </label>
+              </div>
+              <div class="groups">
+                <input type="checkbox" name="ch_20" id="ch_20" />
+                <label for="ch_20">chp < 20 </label>
+              </div>
+              <div class="groups">
+                <input type="checkbox" name="ch_30" id="ch_30" />
+                <label for="ch_30">chp < 30 </label>
+              </div>
+              <div class="groups">
+                <input type="checkbox" name="ch_G30" id="ch_G30" />
+                <label for="ch_G30">chp > 30 </label>
+              </div>
+            </div>
+
+            <div class="cGroup">
+              <div class="groups">
+                <input type="text" name="c_pg" placeholder="...pages" />
+              </div>
+              <div class="groups">
+                <input type="text" name="c_ch" placeholder="...chapters" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <button>generate</button>
+      </div>
+    </div>
+    <script defer="true" src="js/checkBoxes.js"></script>
+    <script defer="true" src="js/generateUsingCheckboxes.js"></script>
+    <script defer="true" src="js/generateUsingInputs.js"></script>
+    <script defer="true" src="js/index.js"></script>
+  </body>
+</html>
